@@ -25,7 +25,6 @@ function deepComparison(a, b) {
 }
 
 
-
 let obj = {here: {is: "an"}, object: 2};
 console.log(deepComparison(obj, obj));
 // → true
