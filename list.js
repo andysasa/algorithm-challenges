@@ -33,6 +33,7 @@ function prepend(value, list) {
 
 // take a list and a number and return element at the given position in the list
 // return undefined when there is no such element
+// num == 0 acts as the cursor, refer to CS50
 function nth(list, n) {
     if (!list) return undefined;
     if (n == 0) return list.value;
@@ -40,8 +41,6 @@ function nth(list, n) {
     // call list.rest to access rest of list
     else return nth(list.rest, n-1);
 }
-
-
 
 console.log(arrayToList([10, 20]));
 // → {value: 10, rest: {value: 20, rest: null}}
